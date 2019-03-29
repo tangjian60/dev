@@ -1,0 +1,43 @@
+/*
+ * Base structure
+ */
+
+.image-upload-container {
+	position:relative;
+}
+
+
+.image-upload {
+	border:solid 1px #eeeeee;
+	width:120px;
+	height:160px;
+}
+
+.image-file-uploader {
+	opacity: 0;
+	position:absolute;
+	top: 0px;
+	left: 0px;
+	z-index: 50000;
+	width: 122px;
+	height: 162px;
+}
+
+.image-uppload-tips {
+	width:122px;
+	height:162px;
+	line-height:80px;
+	font-size:20px;
+	color:#eee;
+	position:absolute;
+	top: 0px;
+	left: 0px;
+}
+
+.help-block{
+	font-size: 12px;
+	color: #A3a3a3;
+}
+
+.font-red { color: #ff0000 }
+.font-green {  color: #008000 }

@@ -1,0 +1,50 @@
+<body>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>请稍候</title>
+</head>
+<style>
+#wrap{
+	position:fixed;
+	top:50%;
+	left:0;
+	width:100%;
+}
+#cen{
+	position:relative;
+	height:200px;
+	top:-100px;
+	width:240px;
+	margin:0px auto;
+}
+
+.tips{
+	font-size:32px;
+}
+
+#loading{
+	position:relative;
+	animation:mymove 3s infinite;
+	-webkit-animation:mymove 3s infinite; /*Safari and Chrome*/
+}
+
+@keyframes mymove
+{
+	0% {left:0px;color:white;}
+	50% {left:20px;color:black;}
+	100% {left:30px;color:white;}
+}
+
+@-webkit-keyframes mymove /*Safari and Chrome*/
+{
+	0% {left:0px;color:white;}
+	50% {left:20px;color:black;}
+	100% {left:30px;color:white;}
+}
+</style>
+<div id="wrap">
+	<div id="cen">
+		<span class="tips">前方路窄，老司机们请排队<span id="loading">...</span></span>
+	</div>
+</div>
+</body>
